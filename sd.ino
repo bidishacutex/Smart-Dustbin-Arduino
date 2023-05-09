@@ -57,7 +57,8 @@ void getDistance(int trigPin, int echoPin, float& distance, long& duration) {
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
   duration = pulseIn(echoPin, HIGH);
-  distance = duration * 0.034 / 2; //Ultrasonic Sensor CM Distance formula = duration_in_microseconds * 0.034 / 2
+  //Ultrasonic Sensor CM Distance formula = duration_in_microseconds * 0.034 / 2
+  distance = duration * 0.034 / 2; 
   
 }
 
