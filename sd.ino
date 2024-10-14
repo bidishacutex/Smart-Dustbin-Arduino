@@ -1,11 +1,13 @@
+// Bidisha Shaw
+
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <WiFiClientSecureBearSSL.h>
 
-#define SSID "iPhone"
-#define PASSWORD "@1234567890@"
-#define API_ENDPOINT "https://smartdustbin.awish.site/api/add_reading_get"
+#define SSID "wifi_name"
+#define PASSWORD "wifi_password"
+#define API_ENDPOINT "https://api_endpoint"
 
 #define TRIG_PIN1 5 //D1
 #define ECHO_PIN1 4 //D2
@@ -13,8 +15,8 @@
 #define ECHO_PIN2 13 //D7
 
 //Get dustbin uid from Panel
-#define DEVICE_UID_1 "cDaffuhVX8iH"
-#define DEVICE_UID_2 "v7UOBgBVUfTy"
+#define DEVICE_UID_1 "deviceuid1"
+#define DEVICE_UID_2 "deviceuid2"
 
 float distance1, distance2;
 long duration1, duration2;
